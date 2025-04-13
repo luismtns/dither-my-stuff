@@ -1,5 +1,5 @@
 {
-  "name": "dither-playground",
+  "name": "dither-my-stuff",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -8,12 +8,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luismtns/dither-playground.git"
+    "url": "https://github.com/luismtns/dither-my-stuff.git"
   },
   "bugs": {
-    "url": "https://github.com/luismtns/dither-playground/issues"
+    "url": "https://github.com/luismtns/dither-my-stuff/issues"
   },
-  "homepage": "https://github.com/luismtns/dither-playground#readme",
+  "homepage": "https://github.com/luismtns/dither-my-stuff#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

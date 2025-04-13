@@ -1,10 +1,14 @@
+<img src="./public/logo.gif" width="128" style="margin:0 auto;display:block;" />
+
 # Dither ~~my stuff~~
 
 An interactive image dithering playground using Floyd–Steinberg and Bayer algorithms with customizable color palettes and pixelation scale. Built with React, Vite, and Mantine.
 
----
-
 ![Screenshot 1](./screenshots/1.png)
+
+#### 🟢 App available at [dither-my-stuff.vercel.app](https://dither-my-stuff.vercel.app/)
+
+---
 
 ## 🚀 Tech Stack
 
@@ -19,7 +23,7 @@ An interactive image dithering playground using Floyd–Steinberg and Bayer algo
 ## 🧪 Features
 
 - Image upload support
-- Choose between Floyd–Steinberg and Bayer 4x4 dithering algorithms
+- Choose between most common dithering algorithms
 - Preset color palettes (Black & White, Sepia, GameBoy, Cyberpunk)
 - Add custom color palette using HEX values
 - Adjustable gray levels and pixel scale
@@ -32,8 +36,8 @@ An interactive image dithering playground using Floyd–Steinberg and Bayer algo
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/luismtns/dither-playground.git
-cd dither-playground
+git clone https://github.com/luismtns/dither-my-stuff.git
+cd dither-my-stuff
 ```
 
 2. **Install dependencies:**
@@ -101,17 +105,21 @@ Inspired by retro filters, TikTok/Instagram effects, and tools like [Photomosh](
 
 ---
 
-## 🌐 Suggested Deployment
+## 🌐 Deployment
 
-- [Vercel](https://vercel.com/)
-- [Netlify](https://netlify.com/)
+- [Vercel](https://dither-my-stuff.vercel.app/)
 
 ---
 
 ## ✨ Future Improvements
 
-WIP
+### 🚧 WIP
+
+- Parametrized dithering algorithms
+- Improve custom color palettes UX
 
 ---
 
 Made with 💛 by [Luis Bovo](https://luisbovo.com)
+
+![footer-dither.gif](./public/footer-dither.gif)

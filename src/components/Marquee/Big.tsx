@@ -17,17 +17,19 @@ function MarqueeBig() {
     'is fucking trash',
   ];
   return (
-    <Box pos={'fixed'} bottom={64} left={0} right={0} style={{ zIndex: -1 }}>
-      <Marquee w={'100%'} pauseOnHover duration={60}>
+    <Box pos={'fixed'} bottom={'10vh'} left={0} right={0} style={{ zIndex: -1 }}>
+      <Marquee w={'100%'} pauseOnHover duration={90} gap='3rem'>
         {Array.from({ length: 20 }).map((_, i) => (
           <Box key={i} flex={1}>
             <Title
-              size={42}
+              size={'4rem'}
               opacity={0.3}
               c={colorScheme === 'dark' ? 'clay' : 'brass'}
-              style={{ whiteSpace: 'nowrap' }}>
+              style={{ whiteSpace: 'nowrap' }}
+              lh={0.5}
+              lts={'0.3rem'}>
               Dither{' '}
-              <Title size='inherit' component={'span'} ff={'text'}>
+              <Title size='inherit' component={'span'} lts={0} ff={'text'}>
                 <s>{prashes[i % prashes.length]}</s>
               </Title>
             </Title>

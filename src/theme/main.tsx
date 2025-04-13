@@ -6,6 +6,7 @@ export const theme = createTheme({
     fontFamily: 'UnifrakturMaguntia, cursive',
   },
   black: '#100b08',
+  white: '#f9f4f2',
   colors: {
     root: [
       '#100b08',
@@ -81,4 +82,8 @@ export const theme = createTheme({
     ],
   },
   primaryColor: 'brass',
+  primaryShade: {
+    light: 0,
+    dark: 9,
+  },
 });

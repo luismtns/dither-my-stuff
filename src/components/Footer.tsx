@@ -20,7 +20,7 @@ function Footer() {
             <GitFork size={16} />
             <Text size={'lg'} lts={'0.1rem'}>
               Contribute on{' '}
-              <a href='https://github.com/luismtns/dither-playground' target='_blank'>
+              <a href='https://github.com/luismtns/dither-my-stuff' target='_blank'>
                 GitHub
               </a>
             </Text>

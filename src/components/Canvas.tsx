@@ -1,6 +1,6 @@
-// src/components/Canvas.tsx
-import { Box } from '@mantine/core';
-import { useEffect, useRef } from 'react';
+import { Button, Image, Stack } from '@mantine/core';
+import { Download } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 import { applyDither } from './Dither/applyDither';
 
 interface CanvasProps {
@@ -12,6 +12,7 @@ interface CanvasProps {
 
 export function Canvas({ image, effect, algorithm, palette }: CanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
 
   useEffect(() => {
     if (!canvasRef.current || !image) return;
@@ -25,23 +26,31 @@ export function Canvas({ image, effect, algorithm, palette }: CanvasProps) {
 
     applyDither(image, effect, algorithm, palette).then((processedImageData) => {
       ctx.putImageData(processedImageData, 0, 0);
+      setPreviewUrl(canvas.toDataURL('image/png'));
     });
   }, [image, effect, algorithm, palette]);
 
+  const handleDownload = () => {
+    if (!previewUrl) return;
+
+    const link = document.createElement('a');
+    link.download = `dither-my-stuff-${Date.now()}.png`;
+    link.href = previewUrl;
+    link.click();
+  };
+
   return (
-    <Box w={'100%'}>
-      <canvas
-        ref={canvasRef}
-        style={{
-          maxHeight: '60vh',
-          maxWidth: '100%',
-          width: 'auto',
-          height: 'auto',
-          margin: '0 auto',
-          display: 'block',
-          border: '1px solid #444',
-        }}
-      />
-    </Box>
+    <Stack w='100%' align='center'>
+      {previewUrl && (
+        <Image src={previewUrl} alt='Dithered preview' w='100%' maw={512} style={{ border: '1px solid #444' }} />
+      )}
+
+      {/* Canvas processador oculto */}
+      <canvas ref={canvasRef} style={{ display: 'none' }} />
+
+      <Button variant='light' onClick={handleDownload} leftSection={<Download size={16} />}>
+        Download Image
+      </Button>
+    </Stack>
   );
 }
