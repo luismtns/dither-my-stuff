@@ -1,0 +1,17 @@
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+main {
+  flex: 1;
+  width: 100%;
+}
