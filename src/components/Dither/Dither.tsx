@@ -1,5 +1,5 @@
 // src/App.tsx
-import { Button, FileButton, Grid, Stack } from '@mantine/core';
+import { Button, FileButton, Grid, Stack, Title } from '@mantine/core';
 import { useDebouncedValue } from '@mantine/hooks';
 import { Upload } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -46,6 +46,8 @@ const PALETTES: Record<string, number[][]> = {
   ],
 };
 
+const SAMPLE_IMAGE_PATH = './sample.png';
+
 function Dither() {
   const localStorageImage = localStorage.getItem('dither-image');
   const [image, setImage] = useState<HTMLImageElement | null>(
@@ -60,12 +62,12 @@ function Dither() {
   );
   const [effect, setEffect] = useState<DitherEffect>(DEFAULT_EFFECT);
 
-  const [debouncedEffect] = useDebouncedValue(effect, 100);
+  const [debouncedEffect] = useDebouncedValue(effect, 300);
 
   useEffect(() => {
     if (image) return;
     const img = new Image();
-    img.src = './sample.png';
+    img.src = SAMPLE_IMAGE_PATH;
     img.onload = () => setImage(img);
   }, [image]);
 
@@ -89,21 +91,27 @@ function Dither() {
 
   return (
     <Grid>
-      <Grid.Col span={6}>
+      <Grid.Col span={{ base: 12, md: 7 }}>
+        <Canvas image={image} effect={debouncedEffect} algorithm={algorithm} palette={palette} />
+      </Grid.Col>
+      <Grid.Col span={{ base: 12, md: 5 }}>
         <Stack>
+          <Title order={2} lts={'0.3rem'}>
+            <s>Drop</s>
+            <Title component={'span'} ff={'text'} lts={'0'} size={'90%'}>
+              {' '}
+              the image
+            </Title>
+          </Title>
           <FileButton accept='image/*' onChange={handleUpload}>
             {(props) => (
-              <Button leftSection={<Upload size={16} />} variant='light' {...props}>
-                {image ? 'Replace Image' : 'Pick a Image'} to Dither
+              <Button leftSection={<Upload size={16} />} variant={'outline'} {...props}>
+                {image ? 'Replace Image' : 'Pick a Image'} to Dithering
               </Button>
             )}
           </FileButton>
-
-          <Canvas image={image} effect={debouncedEffect} algorithm={algorithm} palette={palette} />
+          <Controls effect={effect} onChange={setEffect} />
         </Stack>
-      </Grid.Col>
-      <Grid.Col span={6}>
-        <Controls effect={effect} onChange={setEffect} />
       </Grid.Col>
     </Grid>
   );

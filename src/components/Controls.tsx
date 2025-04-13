@@ -51,7 +51,13 @@ export function Controls({ effect, onChange }: ControlsProps) {
 
   return (
     <Stack>
-      <Title order={2}>Dithering Controls</Title>
+      <Title order={2} lts={'0.3rem'}>
+        <s>Dithering</s>
+        <Title component={'span'} ff={'text'} lts={'0'} size={'90%'}>
+          {' '}
+          controls
+        </Title>
+      </Title>
       <Group grow>
         <Select
           label='Algorithm'

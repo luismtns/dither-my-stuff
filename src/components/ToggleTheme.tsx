@@ -12,8 +12,8 @@ export function ThemeToggle() {
       variant='outline'
       size='lg'
       aria-label='Toggle color scheme'
-      color={dark ? 'yellow' : 'blue'}>
-      {dark ? <Sun size={20} /> : <Moon size={20} />}
+      color={dark ? 'clay' : 'brass'}>
+      {dark ? <Moon size={20} /> : <Sun size={20} />}
     </ActionIcon>
   );
 }

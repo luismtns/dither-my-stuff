@@ -30,7 +30,18 @@ export function Canvas({ image, effect, algorithm, palette }: CanvasProps) {
 
   return (
     <Box w={'100%'}>
-      <canvas ref={canvasRef} style={{ maxWidth: '100%', width: '100%', border: '1px solid #444' }} />
+      <canvas
+        ref={canvasRef}
+        style={{
+          maxHeight: '60vh',
+          maxWidth: '100%',
+          width: 'auto',
+          height: 'auto',
+          margin: '0 auto',
+          display: 'block',
+          border: '1px solid #444',
+        }}
+      />
     </Box>
   );
 }

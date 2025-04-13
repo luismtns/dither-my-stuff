@@ -5,18 +5,19 @@ export const theme = createTheme({
   headings: {
     fontFamily: 'UnifrakturMaguntia, cursive',
   },
+  black: '#100b08',
   colors: {
     root: [
+      '#100b08',
+      '#140f0b',
+      '#18120e',
       '#1b1410',
-      '#1b1410',
-      '#1b1410',
-      '#1b1410',
-      '#1b1410',
-      '#1b1410',
-      '#1b1410',
-      '#1b1410',
-      '#1b1410',
-      '#1b1410',
+      '#221912',
+      '#2a1f18',
+      '#32251e',
+      '#3a2b24',
+      '#45342c',
+      '#514036',
     ],
     clay: [
       '#3e2f24',

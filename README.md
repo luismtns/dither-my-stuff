@@ -1,8 +1,10 @@
-# 🎨 Dither Playground (React + Vite + Mantine)
+# Dither ~~my stuff~~
 
 An interactive image dithering playground using Floyd–Steinberg and Bayer algorithms with customizable color palettes and pixelation scale. Built with React, Vite, and Mantine.
 
 ---
+
+![Screenshot 1](./screenshots/1.png)
 
 ## 🚀 Tech Stack
 
@@ -108,12 +110,8 @@ Inspired by retro filters, TikTok/Instagram effects, and tools like [Photomosh](
 
 ## ✨ Future Improvements
 
-<!-- - [ ] Drag and drop image upload
-- [ ] Export as .SVG and .WEBP
-- [ ] Custom palette with visual color picker
-- [ ] Web Worker optimization for large images
-- [ ] Export/import palette presets -->
+WIP
 
 ---
 
-Made with 💛 by Luis Bovo
+Made with 💛 by [Luis Bovo](https://luisbovo.com)

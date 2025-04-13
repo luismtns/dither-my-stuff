@@ -1,23 +1,20 @@
-import { Container, Space, Title } from '@mantine/core';
+import { Container, Flex } from '@mantine/core';
 import Dither from './components/Dither/Dither';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import MarqueeBig from './components/Marquee/Big';
-import { ThemeToggle } from './components/ToggleTheme';
 
 function App() {
   return (
     <main>
-      <Container w={'100%'} py={'lg'}>
-        <ThemeToggle />
-        <Title mb='md' ta='center'>
-          Dither{' '}
-          <Title component={'span'} ff={'text'}>
-            <s>my stuff</s>
-          </Title>
-        </Title>
-        <Dither />
-        <Space h={92} />
-      </Container>
+      <Flex mih={'calc(100vh - 120px)'} justify={'center'} align={'center'}>
+        <Container w={'100%'} py={'lg'}>
+          <Header />
+          <Dither />
+        </Container>
+      </Flex>
       <MarqueeBig />
+      <Footer />
     </main>
   );
 }
