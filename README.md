@@ -1,6 +1,6 @@
 <img src="./public/logo.gif" width="128" style="margin:0 auto;display:block;" />
 
-<h1 style="font-family: serif; font-size: 3.5rem; letter-spacing: 0.4rem; line-height:0.5;"><s>Dither</s><span style="font-family: serif; font-size: 80%; letter-spacing:0; font-weight: normal;">&nbsp;my stuff</span></h1>
+# Dither my stuff
 
 An interactive image dithering playground using Floyd–Steinberg and Bayer algorithms with customizable color palettes and pixelation scale. Built with React, Vite, and Mantine.
 
