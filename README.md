@@ -1,4 +1,4 @@
-<img src="./public/logo.gif" width="128" style="margin:0 auto;display:block;" />
+![Logo Gif](./public/logo.gif)
 
 # Dither ~~my stuff~~
 
@@ -122,4 +122,4 @@ Inspired by retro filters, TikTok/Instagram effects, and tools like [Photomosh](
 
 Made with 💛 by [Luis Bovo](https://luisbovo.com)
 
-![footer-dither.gif](./public/footer-dither.gif)
+![Footer Gif](./public/footer-dither.gif)
