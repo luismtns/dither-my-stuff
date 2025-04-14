@@ -1,15 +1,19 @@
-import { Group, Title } from '@mantine/core';
-
-function Logo() {
+import { Group, Stack, Title } from '@mantine/core';
+type Props = {
+  showGif?: boolean;
+};
+function Logo({ showGif = true }: Props) {
   return (
-    <Group align='flex-end' gap={'lg'} mb={'md'} wrap='wrap'>
-      <img src={'./logo.gif'} alt='logo' width={128} />
-      <Title size={32} ta='center' lts={'0.3rem'} mb={'xs'} lh={0.5}>
-        <s>Dither</s>
-        <Title size={'75%'} component={'span'} ff={'text'} lts={'0'} ml={12}>
+    <Group align='flex-end' gap={'xl'} flex={1}>
+      {showGif && <img src={'./logo.gif'} alt='logo' width={96} />}
+      <Stack gap={2}>
+        <Title size={42} ta='center' lts={'0.4rem'} lh={0.5}>
+          Dither
+        </Title>
+        <Title order={3} ff={'text'} lts={'0.1rem'} ml={'auto'} mr={8} textWrap='nowrap'>
           my stuff
         </Title>
-      </Title>
+      </Stack>
     </Group>
   );
 }

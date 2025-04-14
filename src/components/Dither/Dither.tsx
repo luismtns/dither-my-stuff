@@ -1,8 +1,7 @@
 // src/App.tsx
-import { Button, FileButton, Grid, Stack, Title } from '@mantine/core';
+import { Grid } from '@mantine/core';
 import { useDebouncedValue } from '@mantine/hooks';
-import { Upload } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Canvas } from '../Canvas';
 import { Controls } from '../Controls';
 import ditherRegistry from './Registry';
@@ -46,30 +45,10 @@ const PALETTES: Record<string, number[][]> = {
   ],
 };
 
-const SAMPLE_IMAGE_PATH = './sample.png';
-
 function Dither() {
-  const localStorageImage = localStorage.getItem('dither-image');
-  const [image, setImage] = useState<HTMLImageElement | null>(
-    localStorageImage
-      ? () => {
-          const img = new Image();
-          img.src = localStorageImage;
-          img.onload = () => setImage(img);
-          return img;
-        }
-      : null
-  );
   const [effect, setEffect] = useState<DitherEffect>(DEFAULT_EFFECT);
 
   const [debouncedEffect] = useDebouncedValue(effect, 300);
-
-  useEffect(() => {
-    if (image) return;
-    const img = new Image();
-    img.src = SAMPLE_IMAGE_PATH;
-    img.onload = () => setImage(img);
-  }, [image]);
 
   const algorithm = ditherRegistry.find((a) => a.id === debouncedEffect.algorithmId)!;
   const palette =
@@ -77,41 +56,13 @@ function Dither() {
       ? (debouncedEffect.customPalette || []).map(hexToRgb)
       : PALETTES[debouncedEffect.paletteId] || PALETTES.bw;
 
-  const handleUpload = (file: File | null) => {
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const img = new Image();
-      img.onload = () => setImage(img);
-      img.src = e.target?.result as string;
-      localStorage.setItem('dither-image', e.target?.result as string);
-    };
-    reader.readAsDataURL(file);
-  };
-
   return (
     <Grid>
       <Grid.Col span={{ base: 12, md: 7 }}>
-        <Canvas image={image} effect={debouncedEffect} algorithm={algorithm} palette={palette} />
+        <Canvas effect={debouncedEffect} algorithm={algorithm} palette={palette} />
       </Grid.Col>
       <Grid.Col span={{ base: 12, md: 5 }}>
-        <Stack>
-          <Title order={2} lts={'0.3rem'}>
-            <s>Drop</s>
-            <Title component={'span'} ff={'text'} lts={'0'} size={'90%'}>
-              {' '}
-              the image
-            </Title>
-          </Title>
-          <FileButton accept='image/*' onChange={handleUpload}>
-            {(props) => (
-              <Button leftSection={<Upload size={16} />} variant={'outline'} {...props}>
-                {image ? 'Replace Image' : 'Pick a Image'} to Dithering
-              </Button>
-            )}
-          </FileButton>
-          <Controls effect={effect} onChange={setEffect} />
-        </Stack>
+        <Controls effect={effect} onChange={setEffect} />
       </Grid.Col>
     </Grid>
   );
