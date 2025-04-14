@@ -80,9 +80,8 @@ yarn lint       # Run ESLint & Prettier
 ```bash
 src/
 ├── assets/            # Logo, presets, and media
-├── components/        # UI components (Canvas, Controls, etc.)
+├── components/        # UI components
 ├── hooks/             # Custom hooks
-├── features/dither/   # Algorithms, palettes, core logic
 ├── utils/             # Helper functions
 ├── App.tsx            # Main application
 └── main.tsx           # Entry point

@@ -45,7 +45,6 @@ export function Canvas({ image, effect, algorithm, palette }: CanvasProps) {
         <Image src={previewUrl} alt='Dithered preview' w='100%' maw={512} style={{ border: '1px solid #444' }} />
       )}
 
-      {/* Canvas processador oculto */}
       <canvas ref={canvasRef} style={{ display: 'none' }} />
 
       <Button variant='light' onClick={handleDownload} leftSection={<Download size={16} />}>
