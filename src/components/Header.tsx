@@ -4,7 +4,7 @@ import { ThemeToggle } from './ToggleTheme';
 
 function Header() {
   return (
-    <Flex component='header' w={'100%'} display={'flex'}>
+    <Flex component='header' w={'100%'} display={'flex'} mb={'md'}>
       <Logo />
       <Flex pos={'absolute'} right={0} top={0} m={16}>
         <ThemeToggle />
