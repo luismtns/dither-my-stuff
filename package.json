@@ -1,11 +1,22 @@
 {
   "name": "dither-my-stuff",
-  "private": true,
   "version": "0.1.0",
-  "type": "module",
   "description": "A playground tool for applying dithering effects to images using React, Vite and Mantine.",
+  "keywords": [
+    "dithering",
+    "image",
+    "glitch",
+    "canvas",
+    "editor",
+    "react",
+    "playground",
+    "aesthetic"
+  ],
   "author": "Luís Otávio Bovo",
   "license": "MIT",
+  "private": true,
+  "type": "module",
+  "homepage": "https://dither-my-stuff.vercel.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/luismtns/dither-my-stuff.git"
@@ -13,7 +24,10 @@
   "bugs": {
     "url": "https://github.com/luismtns/dither-my-stuff/issues"
   },
-  "homepage": "https://github.com/luismtns/dither-my-stuff#readme",
+  "engines": {
+    "node": ">=18",
+    "yarn": ">=1.22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
