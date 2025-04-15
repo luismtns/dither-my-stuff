@@ -11,7 +11,7 @@ function Header() {
       display={'flex'}
       direction={{ base: 'column-reverse', md: 'row' }}
       justify={'flex-start'}
-      mb={'lg'}>
+      mb={'xl'}>
       <Logo />
       <Stack align='flex-end' justify='flex-start' gap={'md'}>
         <Group gap='xs'>
