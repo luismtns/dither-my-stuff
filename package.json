@@ -31,7 +31,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .ts,.tsx",
     "preview": "vite preview"
   },
   "dependencies": {
