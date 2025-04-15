@@ -9,8 +9,6 @@ interface CanvasProps {
   palette: number[][];
 }
 
-const SAMPLE_IMAGE_PATH = './sample.png';
-
 const CanvasBox: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <Flex
@@ -57,8 +55,8 @@ export function Canvas({ effect, algorithm, palette }: CanvasProps) {
 
   const handleSampleImage = () => {
     const img = new Image();
-    img.src = SAMPLE_IMAGE_PATH;
-    img.onload = () => setImage(img as HTMLImageElement);
+    img.src = './sample.png';
+    img.onload = () => setImage(img);
   };
 
   const handleDownload = () => {
@@ -113,15 +111,7 @@ export function Canvas({ effect, algorithm, palette }: CanvasProps) {
     <Stack w='100%' align='center' gap={'xs'}>
       <CanvasBox>
         {previewUrl && (
-          <MImage
-            src={previewUrl}
-            alt='Dithered preview'
-            w='100%'
-            h={'100%'}
-            fit='contain'
-            mah={512}
-            display={'block'}
-          />
+          <MImage src={previewUrl} alt='Dithered preview' fit='contain' maw={640} mah={512} display={'block'} />
         )}
         {(isProcessing || isUploading) && (
           <Flex pos={'absolute'} top={0} left={0} w={'100%'} h={'100%'} align={'center'} justify={'center'}>
