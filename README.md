@@ -1,3 +1,5 @@
+![Lint](https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml/badge.svg)
+
 <p align="center">
   <img src="./public/logo.gif" width="128" alt="Dither my stuff logo" />
 </p>
