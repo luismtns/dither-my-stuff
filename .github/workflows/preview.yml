@@ -1,0 +1,26 @@
+name: PR Build Preview
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-preview:
+    name: 📁 Build on PR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ✨ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🌐 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'yarn'
+
+      - name: ⬇️ Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: 📁 Build Project for PR
+        run: yarn build
