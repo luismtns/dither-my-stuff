@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://dither-my-stuff.vercel.app/" target="_blank"><strong>▶ Try it live</strong></a> •
+  <a href="https://luismtns.github.io/dither-my-stuff/" target="_blank"><strong>▶ Try it live</strong></a> •
   <a href="https://github.com/luismtns/dither-my-stuff/issues">Report an Issue</a> •
   <a href="#-contributing">Contribute</a>
 </p>
@@ -95,8 +95,8 @@ src/
 
 ## 🌐 Deployment
 
-This project is deployed on [Vercel](https://vercel.com/)
-🔗 [https://dither-my-stuff.vercel.app](https://dither-my-stuff.vercel.app)
+This project is deployed on [Github Pages](https://pages.github.com/)
+🔗 [https://luismtns.github.io/dither-my-stuff/](https://luismtns.github.io/dither-my-stuff/)
 
 ## 💡 Inspiration
 
