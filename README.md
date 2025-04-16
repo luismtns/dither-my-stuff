@@ -1,10 +1,4 @@
 <p align="center">
-  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml/badge.svg" />
-  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml/badge.svg" />
-  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml/badge.svg" />
-</p>
-
-<p align="center">
   <img src="./public/logo.gif" width="128" alt="Dither my stuff logo" />
 </p>
 
@@ -16,9 +10,47 @@
 </p>
 
 <p align="center">
-  <a href="https://luismtns.github.io/dither-my-stuff/" target="_blank"><strong>▶ Try it live</strong></a> •
-  <a href="https://github.com/luismtns/dither-my-stuff/issues">Report an Issue</a> •
-  <a href="#-contributing">Contribute</a>
+  <a href="https://luismtns.github.io/dither-my-stuff/" target="_blank">
+  <img src="https://img.shields.io/badge/Try%20it%20live-📺-blue" />
+  </a> •
+  <a href="https://github.com/luismtns/dither-my-stuff/issues">
+  <img src="https://img.shields.io/badge/Report%20an%20Issue-📝-blue" />
+  </a> •
+  <a href="#-contributing">
+  <img src="https://img.shields.io/badge/Contribute-🤝-blue" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/luismtns/dither-my-stuff/stargazers">
+  <img src="https://img.shields.io/github/stars/luismtns/dither-my-stuff" />
+  </a>
+  <a href="https://github.com/luismtns/dither-my-stuff/network/members">
+  <img src="https://img.shields.io/github/forks/luismtns/dither-my-stuff" />
+  </a>
+  <a href="https://github.com/luismtns/dither-my-stuff/issues">
+  <img src="https://img.shields.io/github/contributors/luismtns/dither-my-stuff" />
+  </a>
+  <a href="https://github.com/luismtns/dither-my-stuff/pulls">
+  <img src="https://img.shields.io/github/license/luismtns/dither-my-stuff" />
+  </a>
+  <br/>
+  <a href="https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml">
+  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml/badge.svg" />
+  </a>
+  <a href="https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml">
+  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml/badge.svg" />
+  </a>
+
+  <a href="https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml">
+  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml/badge.svg" />
+  </a>
+  <br/>
+  <a href="#-tech-stack">
+  <img src="https://img.shields.io/badge/Built%20with-React-blue" />
+  <img src="https://img.shields.io/badge/Built%20with-Vite-blue" />
+  <img src="https://img.shields.io/badge/Built%20with-TypeScript-blue" />
+  <img src="https://img.shields.io/badge/Built%20with-Mantine-blue" />
+  </a>
 </p>
 
 ## ✨ What is this?
