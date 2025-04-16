@@ -9,49 +9,21 @@
   A playground to experiment with dithering effects, color palettes, and pixel aesthetics — all in real time.
 </p>
 
-<p align="center">
-  <a href="https://luismtns.github.io/dither-my-stuff/" target="_blank">
-  <img src="https://img.shields.io/badge/Try%20it%20live-📺-blue" />
-  </a> •
-  <a href="https://github.com/luismtns/dither-my-stuff/issues">
-  <img src="https://img.shields.io/badge/Report%20an%20Issue-📝-blue" />
-  </a> •
-  <a href="#-contributing">
-  <img src="https://img.shields.io/badge/Contribute-🤝-blue" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/luismtns/dither-my-stuff/stargazers">
-  <img src="https://img.shields.io/github/stars/luismtns/dither-my-stuff" />
-  </a>
-  <a href="https://github.com/luismtns/dither-my-stuff/network/members">
-  <img src="https://img.shields.io/github/forks/luismtns/dither-my-stuff" />
-  </a>
-  <a href="https://github.com/luismtns/dither-my-stuff/issues">
-  <img src="https://img.shields.io/github/contributors/luismtns/dither-my-stuff" />
-  </a>
-  <a href="https://github.com/luismtns/dither-my-stuff/pulls">
-  <img src="https://img.shields.io/github/license/luismtns/dither-my-stuff" />
-  </a>
-  <br/>
-  <a href="https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml">
-  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml/badge.svg" />
-  </a>
-  <a href="https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml">
-  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml/badge.svg" />
-  </a>
+<div align="center">
 
-  <a href="https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml">
-  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml/badge.svg" />
-  </a>
-  <br/>
-  <a href="#-tech-stack">
-  <img src="https://img.shields.io/badge/Built%20with-React-blue" />
-  <img src="https://img.shields.io/badge/Built%20with-Vite-blue" />
-  <img src="https://img.shields.io/badge/Built%20with-TypeScript-blue" />
-  <img src="https://img.shields.io/badge/Built%20with-Mantine-blue" />
-  </a>
-</p>
+[![Try it live](https://img.shields.io/badge/Try%20it%20live-📺-blue)](https://luismtns.github.io/dither-my-stuff/) [![Report an Issue](https://img.shields.io/badge/Report%20an%20Issue-📝-blue)](https://github.com/luismtns/dither-my-stuff/issues) [![Contribute](https://img.shields.io/badge/Contribute-🤝-blue)](#-contributing)
+
+</div>
+<div align="center">
+
+[![stargazers](https://img.shields.io/github/stars/luismtns/dither-my-stuff)](https://github.com/luismtns/dither-my-stuff/stargazers) [![forks](https://img.shields.io/github/forks/luismtns/dither-my-stuff)](https://github.com/luismtns/dither-my-stuff/network/members) [![contributors](https://img.shields.io/github/contributors/luismtns/dither-my-stuff)](https://github.com/luismtns/dither-my-stuff/graphs/contributors) [![license](https://img.shields.io/github/license/luismtns/dither-my-stuff)](https://github.com/luismtns/dither-my-stuff/blob/main/LICENSE)
+
+</div>
+<div align="center">
+
+[![lint](https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml/badge.svg)](https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml) [![preview](https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml/badge.svg)](https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml) [![deploy](https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml/badge.svg)](https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml)
+
+</div>
 
 ## ✨ What is this?
 
