@@ -1,4 +1,5 @@
 name: Lint
+# This workflow runs ESLint to check for code quality and style issues in the repository.
 
 on:
   push:
@@ -8,6 +9,7 @@ on:
 
 jobs:
   lint:
+    name: ✅ Run ESLint
     runs-on: ubuntu-latest
 
     steps:

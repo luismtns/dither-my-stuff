@@ -1,4 +1,5 @@
-name: Build Preview
+name: Preview
+# This workflow builds the project for previewing changes before merging to the main branch.
 
 on:
   pull_request:
@@ -6,7 +7,7 @@ on:
 
 jobs:
   build-preview:
-    name: Build on PR
+    name: 📁 Build for Preview
     runs-on: ubuntu-latest
 
     steps:

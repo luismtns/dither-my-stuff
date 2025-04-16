@@ -1,5 +1,7 @@
 <p align="center">
   <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/lint.yml/badge.svg" />
+  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/preview.yml/badge.svg" />
+  <img src="https://github.com/luismtns/dither-my-stuff/actions/workflows/deploy.yml/badge.svg" />
 </p>
 
 <p align="center">
