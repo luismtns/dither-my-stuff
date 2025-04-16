@@ -8,5 +8,6 @@ function App() {
     </MainLayout>
   );
 }
+console.log('Testing preview build');
 
 export default App;
