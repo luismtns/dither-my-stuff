@@ -1,4 +1,4 @@
-name: PR Build Preview
+name: Build Preview
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-preview:
-    name: 📁 Build on PR
+    name: Build on PR
     runs-on: ubuntu-latest
 
     steps:
